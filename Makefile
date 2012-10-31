@@ -1,5 +1,5 @@
 
-all: clean unpack buildextra addextensions buildiso
+all: clean unpack buildextra include buildiso
 
 
 unpack: 
@@ -22,6 +22,10 @@ addextensions:
 	ls -1 bin/newiso/cde/optional > bin/newiso/cde/onboot.lst
 	cp bin/newiso/cde/onboot.lst bin/newiso/cde/copy2fs.lst
 	cp bin/newiso/cde/onboot.lst bin/newiso/cde/xbase.lst
+
+include:
+	cp -rf src/include/* bin/newiso
+	
 
 buildextra:
 	mkdir -p bin/extra

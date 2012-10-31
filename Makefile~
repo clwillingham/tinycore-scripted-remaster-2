@@ -25,7 +25,7 @@ addextensions:
 
 buildextra:
 	mkdir -p bin/extra
-	cp src/extra/* -r bin/extra
+	cp -r src/extra/* -r bin/extra
 	cd bin/extra/; find | cpio -o -H newc | gzip -2 > ../newiso/boot/extra.gz
 
 buildiso:
