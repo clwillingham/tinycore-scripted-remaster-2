@@ -29,8 +29,7 @@ the basics of the project are pretty simple, there is a single Makefile that is 
 so here's how to make a custom iso image with the Makefile
 
 1. place anything you want to be included in the iso image into src/include
-2. place packages you want loaded into src/include/cde/optional and add the name to onboot.lst in a new line (this will be automated eventually
+2. place packages you want loaded into src/include/cde/optional and add the name to onboot.lst in a new line (this will be automated eventually)
 3. cd to the root directory where this readme is and run "make"
 4. if mkisofs succeeded then go ahead and run "make run" to test your system!
-
 
