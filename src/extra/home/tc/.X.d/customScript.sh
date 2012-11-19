@@ -1,1 +1,1 @@
-node ../server/server.js
+echo hello world
