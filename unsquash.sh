@@ -1,5 +1,7 @@
+#!/bin/sh
 mkdir -p ./bin/overlays
 mkdir -p ./bin/packages
+
 
 cd ./src/packages
 set $FILES = ls ./src/packages/
